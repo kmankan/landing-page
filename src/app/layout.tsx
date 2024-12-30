@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { BackgroundBoxes } from "@/components/background";
 import { Boxes } from "@/components/ui/background-boxes";
-import { ThemeProvider } from "next-themes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,11 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#c9daecda]`}
       >
-        <ThemeProvider attribute="class">
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );

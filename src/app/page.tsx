@@ -1,18 +1,25 @@
 
 import InfoCard from "@/components/info-card";
+import BioCard from "@/components/bio-card";
 import { Boxes } from "@/components/ui/background-boxes";
 import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
-    <div className="h-screen relative w-full overflow-hidden flex flex-col items-center justify-center rounded-lg bg-[#4f868e]">
-      <div className="absolute inset-0 w-full h-full bg-slate-600 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+    <div className="w-full overflow-hidden rounded-lg">
+      <div className="absolute inset-0 w-full h-full pointer-events-none" />
       <Boxes />
-      <div className="flex flex-row gap-4">
-        <InfoCard title="GitHub" handle="@kmankan" iconName="github" />
-        <InfoCard title="LinkedIn" handle="@malin.kankanamge" iconName="linkedin" />
-        <InfoCard title="Twitter" handle="@mahlenr" iconName="twitter" />
-        <InfoCard title="Email" handle="kmankan@gmail.com" iconName="email" />
+      <div className="flex flex-row justify-center gap-60 border-2 border-red-500 mx-auto">
+        <div className="flex items-center justify-center border-2">
+          <BioCard />
+        </div>
+        <div className="flex flex-col items-end justify-center min-h-screen gap-4 border-2">
+          <InfoCard title="GitHub" handle="@kmankan" iconName="github" />
+          <InfoCard title="LinkedIn" handle="@malin.kankanamge" iconName="linkedin" />
+          <InfoCard title="Twitter" handle="@mahlenr" iconName="twitter" />
+          {/* <InfoCard title="Email" handle="malin.kankanamge@gmail.com" iconName="email" /> */}
+          <InfoCard title="Blog" handle="mkan.xyz" iconName="blog" />
+        </div>
       </div>
     </div>
   );
