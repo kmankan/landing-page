@@ -26,6 +26,7 @@
     "npm": "^11.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "simple-icons": "^14.0.1",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7"
   },
