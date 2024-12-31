@@ -1,26 +1,63 @@
-
-import InfoCard from "@/components/info-card";
-import BioCard from "@/components/bio-card";
+'use client'
+import { motion, useScroll, useSpring } from "framer-motion";
+import InfoCard from "@/components/bio/info-card";
+import BioCard from "@/components/bio/bio-card";
 import { Boxes } from "@/components/ui/background-boxes";
 import { cn } from "@/lib/utils";
+import Landing from "@/components/bio/landing";
+import ResumeUp from "@/components/resume/Resume-Up";
+import Resume from "@/components/resume/Resume";
 
 export default function Home() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   return (
-    <div className="w-full overflow-hidden rounded-lg">
-      <div className="absolute inset-0 w-full h-full pointer-events-none" />
-      <Boxes />
-      <div className="flex flex-row justify-center gap-60 border-2 border-red-500 mx-auto">
-        <div className="flex items-center justify-center border-2">
-          <BioCard />
-        </div>
-        <div className="flex flex-col items-end justify-center min-h-screen gap-4 border-2">
-          <InfoCard title="GitHub" handle="@kmankan" iconName="github" />
-          <InfoCard title="LinkedIn" handle="@malin.kankanamge" iconName="linkedin" />
-          <InfoCard title="Twitter" handle="@mahlenr" iconName="twitter" />
-          {/* <InfoCard title="Email" handle="malin.kankanamge@gmail.com" iconName="email" /> */}
-          <InfoCard title="Blog" handle="mkan.xyz" iconName="blog" />
-        </div>
+    <>
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-[#ff705c] origin-[0%] z-50"
+        style={{ scaleX }}
+      />
+      {/* Boxes as fixed background */}
+      <div className="fixed inset-0 z-0">
+        <Boxes />
       </div>
-    </div>
+
+      <div className="h-screen w-full overflow-y-auto snap-y snap-mandatory">
+        <motion.div
+          className="snap-start h-screen w-full relative z-10"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <Landing />
+        </motion.div>
+
+        <motion.div
+          className="snap-start h-screen w-full relative z-10"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <ResumeUp />
+        </motion.div>
+
+        <motion.div
+          className="snap-start h-screen w-full relative z-10"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <Resume />
+        </motion.div>
+      </div>
+    </>
   );
 }
