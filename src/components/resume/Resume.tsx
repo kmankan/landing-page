@@ -145,10 +145,7 @@ export default function Resume() {
   const componentRef = useRef<HTMLDivElement>(null)
 
   return (
-    <div className="font-circular bg-gray-700 dark:text-black">
-      <div className="hidden md:block">
-        <PrintButton />
-      </div>
+    <div className="font-circular dark:text-black">
       <div className="max-w-[794px] bg-white print:bg-white border-2 border-black print:border-none mx-auto py-6 print:py-0">
         <div
           ref={componentRef}

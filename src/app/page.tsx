@@ -18,45 +18,41 @@ export default function Home() {
 
   return (
     <>
+      {/* Progress bar */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-[#ff705c] origin-[0%] z-50"
         style={{ scaleX }}
       />
-      {/* Boxes as fixed background */}
-      <div className="fixed inset-0 z-0">
+
+      {/* Background boxes */}
+      <div className="fixed inset-0">
         <Boxes />
       </div>
 
-      <div className="h-screen w-full overflow-y-auto snap-y snap-mandatory">
-        <motion.div
-          className="snap-start h-screen w-full relative z-10"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <Landing />
-        </motion.div>
+      {/* Content layer - removed relative */}
+      <div className="overflow-y-auto snap-y snap-mandatory min-h-screen">
+        {/* Landing section */}
+        <div className="snap-start min-h-screen">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+          >
+            <Landing />
+          </motion.div>
+        </div>
 
-        <motion.div
-          className="snap-start h-screen w-full relative z-10"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <ResumeUp />
-        </motion.div>
-
-        <motion.div
-          className="snap-start h-screen w-full relative z-10"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <Resume />
-        </motion.div>
+        {/* Full Resume section */}
+        <div className="min-h-screen snap-start border-2 border-red-500">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 10 }}
+            viewport={{ once: true }}
+          >
+            <Resume />
+          </motion.div>
+        </div>
       </div>
     </>
   );
