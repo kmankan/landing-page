@@ -7,10 +7,11 @@ interface ProjectCardProps {
   shortDescription: string;
   previewImage: string;
   videoEmbed?: string;
-  link: string;
+  url: string;
+  onClick: () => void;
 }
 
-export default function ProjectCard({ title, description, shortDescription, previewImage, videoEmbed, link }: ProjectCardProps) {
+export default function ProjectCard({ title, description, shortDescription, previewImage, videoEmbed, url, onClick }: ProjectCardProps) {
   return (
     <div
       id="project-card"
@@ -19,17 +20,9 @@ export default function ProjectCard({ title, description, shortDescription, prev
         hover:scale-105 hover:shadow-md 
         active:scale-95 active:bg-gray-100 
         cursor-pointer"
+      onClick={onClick}
     >
       <h1 className="text-2xl font-bold">{title}</h1>
-      {/* <div className="relative aspect-video mb-4 bg-[#262628]">
-        <Image
-          src={previewImage}
-          alt={`Preview of ${title}`}
-          fill
-          className="rounded-lg object-contain"
-          priority
-        />
-      </div> */}
       <p className="text-sm">{shortDescription}</p>
     </div>
   );
