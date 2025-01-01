@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import Landing from "@/components/bio/landing";
 import ResumeUp from "@/components/resume/Resume-Up";
 import Resume from "@/components/resume/Resume";
+import ProjectLayout from "@/components/projects/project-layout";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -36,18 +37,30 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.2 }}
           >
             <Landing />
           </motion.div>
         </div>
 
-        {/* Full Resume section */}
-        <div className="min-h-screen snap-start border-2 border-red-500">
+        {/* Projects section */}
+        <div className="min-h-screen snap-start border-2 border-red-500 z-10">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 10 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
+            <ProjectLayout />
+          </motion.div>
+        </div>
+
+        {/* Full Resume section */}
+        <div className="min-h-screen snap-start border-2 border-red-500 z-10">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
             <Resume />

@@ -146,6 +146,7 @@ export default function Resume() {
 
   return (
     <div className="font-circular dark:text-black">
+      <h1 className="text-4xl font-bold text-center my-4">CV</h1>
       <div className="max-w-[794px] bg-white print:bg-white border-2 border-black print:border-none mx-auto py-6 print:py-0">
         <div
           ref={componentRef}
