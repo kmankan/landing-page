@@ -56,7 +56,7 @@ export default function Home() {
         </div>
 
         {/* Full Resume section */}
-        <div className="min-h-screen snap-start border-2 border-red-500 z-10">
+        {/* <div className="min-h-screen snap-start border-2 border-red-500 z-10">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -65,7 +65,7 @@ export default function Home() {
           >
             <Resume />
           </motion.div>
-        </div>
+        </div> */}
       </div>
     </>
   );
