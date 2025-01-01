@@ -29,14 +29,15 @@ export default function InfoCard(
       github: `https://github.com/kmankan`,
       linkedin: `https://www.linkedin.com/in/mkankanamge/`,
       twitter: `https://twitter.com/mahlenr`,
-      email: `mailto:malin.kankanamge@gmail.com`
+      email: `mailto:malin.kankanamge@gmail.com`,
+      blog: `https://mkan.xyz/`
     };
     window.open(urls[iconName], '_blank');
   }
   return (
     <div
       id="info-card"
-      className="relative w-80 h-24 rounded-xl bg-white p-6 shadow-lg border-2 border-gray-800
+      className="relative w-80 h-24 rounded-xl bg-slate-200 p-6 shadow-lg border-2 border-gray-800
         transition-all duration-200 
         hover:scale-105 hover:shadow-md 
         active:scale-95 active:bg-gray-100 
