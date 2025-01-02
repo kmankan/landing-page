@@ -4,11 +4,9 @@ import { faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
 export default function InfoCardLarge(
   {
-    title,
     handle,
     iconName
   }: {
-    title?: string;
     handle?: string;
     iconName: string;
   }
