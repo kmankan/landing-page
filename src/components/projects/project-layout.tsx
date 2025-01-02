@@ -13,16 +13,6 @@ type Projects = {
   videoEmbed?: string
 }
 
-interface ProjectCardProps {
-  title: string;
-  description: string;
-  shortDescription: string;
-  previewImage: string;
-  videoEmbed?: string;
-  link: string;
-  onClick: () => void;
-}
-
 // Define project data
 const projects = [
   {
@@ -101,7 +91,7 @@ export default function ProjectLayout() {
         </div>
       </div>
       <div className="relative flex flex-wrap gap-2 justify-center items-center mt-20">
-        {skills.map((skill, id) => (
+        {skills.map((skill) => (
           <Badge key={skill}>{skill}</Badge>
         ))}
       </div>

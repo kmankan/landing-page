@@ -2,6 +2,7 @@
 import { motion, useScroll, useSpring } from "framer-motion";
 import Landing from "@/components/bio/landing";
 import ProjectLayout from "@/components/projects/project-layout";
+import { Boxes } from "@/components/ui/background-boxes"
 
 export default function Home() {
   const { scrollYProgress } = useScroll();

@@ -5,7 +5,6 @@ import { Mail, Phone, Globe } from 'lucide-react'
 import { siGithub } from 'simple-icons'
 import { PreviewModal } from '@/components/resume/PreviewModal'
 import { useRef } from 'react'
-import PrintButton from '@/components/resume/PrintButton'
 
 type ContractWork = {
   company: string

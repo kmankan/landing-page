@@ -1,5 +1,4 @@
 "use client";
-import Image from 'next/image'
 
 interface ProjectCardProps {
   title: string;
@@ -11,7 +10,7 @@ interface ProjectCardProps {
   onClick: () => void;
 }
 
-export default function ProjectCard({ title, description, shortDescription, previewImage, videoEmbed, url, onClick }: ProjectCardProps) {
+export default function ProjectCard({ title, shortDescription, onClick }: ProjectCardProps) {
   return (
     <div
       id="project-card"

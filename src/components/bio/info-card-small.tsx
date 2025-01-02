@@ -1,17 +1,7 @@
 "use client";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faPenNib, faCalendar } from '@fortawesome/free-solid-svg-icons'
-
-
-type IconComponent = React.ForwardRefExoticComponent<
-  React.ComponentPropsWithoutRef<'svg'> & {
-    'aria-hidden'?: boolean;
-    'data-state'?: string;
-    children?: never;
-  }
->;
+import { faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faPenNib } from '@fortawesome/free-solid-svg-icons'
 
 export default function InfoCardSmall(
   {
