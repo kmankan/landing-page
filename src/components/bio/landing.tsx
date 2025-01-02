@@ -3,7 +3,6 @@
 import InfoCardLarge from "@/components/bio/info-card-large";
 import InfoCardSmall from "@/components/bio/info-card-small";
 import BioCard from "@/components/bio/bio-card";
-import RippleButton from "../ui/ripple-button";
 
 export default function Landing() {
   return (
@@ -14,9 +13,9 @@ export default function Landing() {
           <BioCard />
         </div>
         <div className="flex flex-col items-end justify-center gap-6">
-          <InfoCardLarge title="GitHub" handle="@kmankan" iconName="github" />
-          <InfoCardLarge title="Twitter" handle="@mahlenr" iconName="twitter" />
-          <InfoCardLarge title="Blog" handle="mkan.xyz" iconName="blog" />
+          <InfoCardLarge handle="@kmankan" iconName="github" />
+          <InfoCardLarge handle="@mahlenr" iconName="twitter" />
+          <InfoCardLarge handle="mkan.xyz" iconName="blog" />
           <div className="flex gap-4">
             <InfoCardSmall iconName="email" />
             <InfoCardSmall iconName="calendar" />

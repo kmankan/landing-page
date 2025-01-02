@@ -22,7 +22,7 @@ export default function BioCard() {
           <br></br>
           <p>Now i&apos;m looking to join a brilliant team of engineers and creatives on a mission to build something incredible. If you&apos;re seeing this and that&apos;s you please reach out. Email me, DM me on twitter or book a call!</p>
           <br></br>
-          <p>I'm currently based in Sydney Australia but open to moving basically anywhere for the right role.</p>
+          <p>I&apos;m currently based in Sydney Australia but open to moving basically anywhere for the right role.</p>
         </div>
 
       </div>
