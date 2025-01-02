@@ -43,17 +43,15 @@ export default function InfoCardLarge(
         active:scale-95 active:bg-gray-100 
         cursor-pointer"
       onClick={handleClick}>
-      <div className="flex flex-row absolute top-6 left-6 gap-4 items-center">
-        <div className="flex border-2 border-gray-800 rounded-full p-2 items-center justify-center">
-          {iconName === 'github' && <FontAwesomeIcon icon={faGithub} className="w-8 h-8" />}
-          {iconName === 'linkedin' && <FontAwesomeIcon icon={faLinkedin} className="w-4 h-4" />}
-          {iconName === 'twitter' && <FontAwesomeIcon icon={faXTwitter} className="w-8 h-8" />}
-          {iconName === 'email' && <FontAwesomeIcon icon={faEnvelope} className="w-4 h-4" />}
+      <div className="flex flex-row absolute gap-4 items-center">
+        <div className="flex  items-center justify-center">
+          {iconName === 'github' && <FontAwesomeIcon icon={faGithub} className="w-10 h-10" />}
+          {iconName === 'twitter' && <FontAwesomeIcon icon={faXTwitter} className="w-10 h-10" />}
           {iconName === 'blog' && (
             <img
               src="https://mkan.xyz/static/icon.png"
               alt="mkan.xyz icon"
-              className="w-8 h-8"
+              className="w-10 h-10 object-contain"
             />
           )}
         </div>
