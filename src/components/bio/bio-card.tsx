@@ -4,17 +4,17 @@ export default function BioCard() {
   return (
     <div
       id="bio-card"
-      className="relative w-[631px] h-[600px] rounded-xl bg-slate-200 p-6 shadow-lg border-2 border-gray-800
+      className="relative w-[631px] h-[600px] rounded-xl bg-slate-100 p-6 shadow-lg border-2 border-gray-800
         cursor-pointer"
     >
       <div className="flex flex-col">
         <h1 id="title">hey i'm malin</h1>
         <br></br>
         <div id="blurb">
-          <p>Im a software developer</p>
+          <p>I'm a software developer</p>
           <br></br>
           <p>In a previous life I worked on improving infra at large orgs.</p><br></br>
-          <p>In 2023 I realised what I actually wanted to do was build things. Useful things. Beatiful things.</p>
+          <p>In 2023 I realised what I actually wanted to do was build things. Useful things. Beautiful things.</p>
           <br></br>
           <p>So I decided to become a fullstack software developer.</p>
           <br></br>

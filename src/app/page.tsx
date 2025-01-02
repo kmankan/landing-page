@@ -44,7 +44,7 @@ export default function Home() {
         </div>
 
         {/* Projects section */}
-        <div className="min-h-screen snap-start border-2 border-red-500 z-10">
+        <div className="min-h-screen snap-start pt-6 z-10">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -54,18 +54,6 @@ export default function Home() {
             <ProjectLayout />
           </motion.div>
         </div>
-
-        {/* Full Resume section */}
-        {/* <div className="min-h-screen snap-start border-2 border-red-500 z-10">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
-            <Resume />
-          </motion.div>
-        </div> */}
       </div>
     </>
   );
