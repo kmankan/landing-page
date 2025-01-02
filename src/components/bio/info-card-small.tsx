@@ -34,7 +34,7 @@ export default function InfoCardSmall(
   return (
     <div
       id="info-card"
-      className="relative w-24 h-24 rounded-xl bg-slate-200 pt-7 shadow-lg border-2 border-gray-800
+      className="relative w-24 h-24 rounded-xl bg-slate-100 pt-7 shadow-lg border-2 border-gray-800
         transition-all duration-200 
         hover:scale-105 hover:shadow-md 
         active:scale-95 active:bg-gray-100 
@@ -58,9 +58,9 @@ export default function InfoCardSmall(
           {iconName === 'calendar' && (
             <div className="">
               <img
-                src="https://app.cal.com/api/logo?type=favicon-32"
+                src="https://cal.com/apple-touch-icon.png"
                 alt="Cal.com"
-                className="w-8 h-8" // Increased size to match container
+                className="w-8 h-8 rounded-sm" // Increased size to match container
               />
             </div>
           )}

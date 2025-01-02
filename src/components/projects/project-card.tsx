@@ -15,7 +15,7 @@ export default function ProjectCard({ title, description, shortDescription, prev
   return (
     <div
       id="project-card"
-      className="relative w-[431px] h-[150px] rounded-xl bg-slate-200 p-6 shadow-lg border-2 border-gray-800
+      className="relative w-[431px] h-[150px] rounded-xl bg-slate-100 p-6 shadow-lg border-2 border-gray-800
         transition-all duration-200 
         hover:scale-105 hover:shadow-md 
         active:scale-95 active:bg-gray-100 

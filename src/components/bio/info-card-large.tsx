@@ -37,7 +37,7 @@ export default function InfoCardLarge(
   return (
     <div
       id="info-card"
-      className="relative w-80 h-24 rounded-xl bg-slate-200 p-6 shadow-lg border-2 border-gray-800
+      className="relative w-80 h-24 rounded-xl bg-slate-100 p-6 shadow-lg border-2 border-gray-800
         transition-all duration-200 
         hover:scale-105 hover:shadow-md 
         active:scale-95 active:bg-gray-100 
@@ -51,7 +51,7 @@ export default function InfoCardLarge(
             <img
               src="https://mkan.xyz/static/icon.png"
               alt="mkan.xyz icon"
-              className="w-10 h-10 object-contain"
+              className="w-10 h-10 object-contain border-2"
             />
           )}
         </div>

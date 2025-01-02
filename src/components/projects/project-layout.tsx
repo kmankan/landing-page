@@ -2,6 +2,7 @@
 import { useState } from "react";
 import ProjectCard from "./project-card";
 import { PreviewModal } from "@/components/resume/PreviewModal";
+import { Badge } from "./badge";
 
 type Projects = {
   title: string
@@ -71,6 +72,17 @@ const projects = [
   }
 ]
 
+const skills = [
+  "React",
+  "Next.js",
+  "Typescript",
+  "Node.js",
+  "Python",
+  "Go",
+  "Postgres",
+  "Docker",
+]
+
 export default function ProjectLayout() {
   const [selectedProject, setSelectedProject] = useState<Projects | null>(null)
 
@@ -87,6 +99,11 @@ export default function ProjectLayout() {
             />
           ))}
         </div>
+      </div>
+      <div className="relative flex flex-wrap gap-2 justify-center items-center mt-20">
+        {skills.map((skill, id) => (
+          <Badge key={skill}>{skill}</Badge>
+        ))}
       </div>
 
       {selectedProject && (
