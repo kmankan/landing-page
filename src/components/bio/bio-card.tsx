@@ -11,7 +11,7 @@ export default function BioCard() {
         <h1 id="title">hey i'm malin</h1>
         <br></br>
         <div id="blurb">
-          <p>I'm a software developer</p>
+          <p>I&apos;m a software developer</p>
           <br></br>
           <p>In a previous life I worked on improving infra at large orgs.</p><br></br>
           <p>In 2023 I realised what I actually wanted to do was build things. Useful things. Beautiful things.</p>

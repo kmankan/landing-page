@@ -1,12 +1,6 @@
 'use client'
 import { motion, useScroll, useSpring } from "framer-motion";
-import InfoCard from "@/components/bio/info-card";
-import BioCard from "@/components/bio/bio-card";
-import { Boxes } from "@/components/ui/background-boxes";
-import { cn } from "@/lib/utils";
 import Landing from "@/components/bio/landing";
-import ResumeUp from "@/components/resume/Resume-Up";
-import Resume from "@/components/resume/Resume";
 import ProjectLayout from "@/components/projects/project-layout";
 
 export default function Home() {
