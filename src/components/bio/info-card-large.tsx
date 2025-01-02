@@ -1,0 +1,66 @@
+"use client";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faPenNib } from '@fortawesome/free-solid-svg-icons'
+
+
+type IconComponent = React.ForwardRefExoticComponent<
+  React.ComponentPropsWithoutRef<'svg'> & {
+    'aria-hidden'?: boolean;
+    'data-state'?: string;
+    children?: never;
+  }
+>;
+
+export default function InfoCardLarge(
+  {
+    title,
+    handle,
+    iconName
+  }: {
+    title: string;
+    handle: string;
+    iconName: string;
+  }
+) {
+  const handleClick = () => {
+    const urls: { [key: string]: string } = {
+      github: `https://github.com/kmankan`,
+      linkedin: `https://www.linkedin.com/in/mkankanamge/`,
+      twitter: `https://twitter.com/mahlenr`,
+      email: `mailto:malin.kankanamge@gmail.com`,
+      blog: `https://mkan.xyz/`
+    };
+    window.open(urls[iconName], '_blank');
+  }
+  return (
+    <div
+      id="info-card"
+      className="relative w-80 h-24 rounded-xl bg-slate-200 p-6 shadow-lg border-2 border-gray-800
+        transition-all duration-200 
+        hover:scale-105 hover:shadow-md 
+        active:scale-95 active:bg-gray-100 
+        cursor-pointer"
+      onClick={handleClick}>
+      <div className="flex flex-row absolute top-6 left-6 gap-4 items-center">
+        <div className="flex border-2 border-gray-800 rounded-full p-2 items-center justify-center">
+          {iconName === 'github' && <FontAwesomeIcon icon={faGithub} className="w-8 h-8" />}
+          {iconName === 'linkedin' && <FontAwesomeIcon icon={faLinkedin} className="w-4 h-4" />}
+          {iconName === 'twitter' && <FontAwesomeIcon icon={faXTwitter} className="w-8 h-8" />}
+          {iconName === 'email' && <FontAwesomeIcon icon={faEnvelope} className="w-4 h-4" />}
+          {iconName === 'blog' && (
+            <img
+              src="https://mkan.xyz/static/icon.png"
+              alt="mkan.xyz icon"
+              className="w-8 h-8"
+            />
+          )}
+        </div>
+        <div className="flex">
+          {handle}
+        </div>
+      </div>
+    </div>
+  );
+}

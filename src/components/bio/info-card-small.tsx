@@ -2,7 +2,7 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faPenNib } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPenNib, faCalendar } from '@fortawesome/free-solid-svg-icons'
 
 
 type IconComponent = React.ForwardRefExoticComponent<
@@ -13,14 +13,10 @@ type IconComponent = React.ForwardRefExoticComponent<
   }
 >;
 
-export default function InfoCard(
+export default function InfoCardSmall(
   {
-    title,
-    handle,
     iconName
   }: {
-    title: string;
-    handle: string;
     iconName: string;
   }
 ) {
@@ -30,29 +26,44 @@ export default function InfoCard(
       linkedin: `https://www.linkedin.com/in/mkankanamge/`,
       twitter: `https://twitter.com/mahlenr`,
       email: `mailto:malin.kankanamge@gmail.com`,
-      blog: `https://mkan.xyz/`
+      blog: `https://mkan.xyz/`,
+      calendar: 'https://cal.com/malin-kankanamge-vpw5pl'
     };
     window.open(urls[iconName], '_blank');
   }
   return (
     <div
       id="info-card"
-      className="relative w-80 h-24 rounded-xl bg-slate-200 p-6 shadow-lg border-2 border-gray-800
+      className="relative w-24 h-24 rounded-xl bg-slate-200 pt-7 shadow-lg border-2 border-gray-800
         transition-all duration-200 
         hover:scale-105 hover:shadow-md 
         active:scale-95 active:bg-gray-100 
         cursor-pointer"
       onClick={handleClick}>
-      <div className="flex flex-row absolute top-6 left-6 gap-4 items-center">
-        <div className="flex border-2 border-gray-800 rounded-full p-2 ">
+      <div className="">
+        <div className="flex items-center justify-center">
           {iconName === 'github' && <FontAwesomeIcon icon={faGithub} />}
-          {iconName === 'linkedin' && <FontAwesomeIcon icon={faLinkedin} />}
+          {iconName === 'linkedin' && (
+            <div className="">
+              <img
+                src="https://static.licdn.com/aero-v1/sc/h/eahiplrwoq61f4uan012ia17i"
+                alt="linkedin.com"
+                className="w-8 h-8" // Increased size to match container
+              />
+            </div>
+          )}
           {iconName === 'twitter' && <FontAwesomeIcon icon={faXTwitter} />}
-          {iconName === 'email' && <FontAwesomeIcon icon={faEnvelope} />}
+          {iconName === 'email' && <FontAwesomeIcon icon={faEnvelope} size="2x" />}
           {iconName === 'blog' && <FontAwesomeIcon icon={faPenNib} />}
-        </div>
-        <div className="flex">
-          {handle}
+          {iconName === 'calendar' && (
+            <div className="">
+              <img
+                src="https://app.cal.com/api/logo?type=favicon-32"
+                alt="Cal.com"
+                className="w-8 h-8" // Increased size to match container
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>
