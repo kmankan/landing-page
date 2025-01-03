@@ -3,8 +3,8 @@
 import InfoCardLarge from "@/components/bio/info-card-large";
 import InfoCardSmall from "@/components/bio/info-card-small";
 import BioCard from "@/components/bio/bio-card";
-import { ChevronDown } from 'lucide-react';
 import { motion } from "motion/react";
+import FlickeringArrow from "../FlickeringArrow";
 
 export default function Landing() {
   return (
@@ -36,8 +36,10 @@ export default function Landing() {
           ease: "easeInOut"
         }}
         className="flex flex-row justify-center gap-60 mx-auto mt-12">
-        <ChevronDown color="white" />
+        <FlickeringArrow />
       </motion.div>
     </div>
   );
 }
+
+
