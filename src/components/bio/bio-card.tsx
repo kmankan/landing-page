@@ -5,15 +5,16 @@ export default function BioCard() {
   return (
     <div
       id="bio-card"
-      className="relative w-[631px] h-[640px] rounded-xl bg-slate-100 p-6 shadow-lg border-2 border-gray-800
+      className="relative w-[80%] md:w-[631px] h-auto min-h-[640px] rounded-xl bg-slate-100 p-4 md:p-6 shadow-lg border-2 border-gray-800
         cursor-text"
     >
       <div className="flex flex-col">
-        <Image src="/profile/IMG_9314.png" alt="Malin" width={110} height={110} className="rounded-full absolute top-4 right-4 border-2" />
-        <h1 id="title">hey i&apos;m malin (or mahlen)</h1>
-        <br></br>
+        <Image src="/profile/IMG_9314.png" alt="Malin" width={110} height={110} className="rounded-full relative mb-2 md:mb-0 md:absolute md:top-4 md:right-4 border-2 md:border-2 mx-auto md:mx-0" />
         <div id="blurb">
-          <p>In a previous life I worked on improving infra at large orgs.</p><br></br>
+          <h1 id="title">hey i&apos;m malin (or mahlen)</h1>
+          <br></br>
+          <p>In a previous life I worked on improving infra at large orgs.</p>
+          <br></br>
           <p>In 2023 I realised what I actually wanted to do was build things.</p>
           <p>Useful things. Beautiful things.</p>
           <br></br>
