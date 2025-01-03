@@ -9,12 +9,12 @@ import FlickeringArrow from "../FlickeringArrow";
 export default function Landing() {
   return (
     <div>
-      <h1 className="relative text-4xl font-bold text-center mt-6">About Me</h1>
-      <div className="flex flex-row justify-center gap-60 mx-auto mt-16">
-        <div className="flex items-center justify-center">
+      <h1 className="relative text-4xl font-bold text-center mt-6 font-comfortaa">About Me</h1>
+      <div className="flex flex-row justify-center gap-60 mx-auto mt-14">
+        <div className="flex items-center justify-center font-nunito text-base">
           <BioCard />
         </div>
-        <div className="flex flex-col items-end justify-center gap-6">
+        <div className="flex flex-col items-end justify-center gap-6 font-nunito font-normal">
           <InfoCardLarge handle="@kmankan" iconName="github" />
           <InfoCardLarge handle="@mahlenr" iconName="twitter" />
           <InfoCardLarge handle="mkan.xyz" iconName="blog" />

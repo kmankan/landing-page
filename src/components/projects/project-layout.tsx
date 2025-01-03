@@ -78,8 +78,8 @@ export default function ProjectLayout() {
 
   return (
     <>
-      <h1 className="relative text-4xl font-bold text-center mt-6">Projects</h1>
-      <div className="flex flex-col justify-center items-center mt-10">
+      <h1 className="relative text-4xl font-bold text-center mt-6 font-comfortaa">Projects</h1>
+      <div className="flex flex-col justify-center items-center mt-10 font-nunito">
         <div className="grid grid-cols-2 gap-x-20 gap-y-10 max-w-6xl mx-auto">
           {projects.map((project) => (
             <ProjectCard
@@ -90,7 +90,7 @@ export default function ProjectLayout() {
           ))}
         </div>
       </div>
-      <div className="relative flex flex-wrap gap-2 justify-center items-center mt-20">
+      <div className="relative flex flex-wrap gap-2 justify-center items-center mt-20 font-geist-mono">
         {skills.map((skill) => (
           <Badge key={skill}>{skill}</Badge>
         ))}

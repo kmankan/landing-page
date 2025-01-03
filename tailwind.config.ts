@@ -72,7 +72,15 @@ export default {
   					opacity: '0'
   				}
   			}
-  		}
+  		},
+  		fontFamily: {
+  			'geist-sans': ['var(--font-geist-sans)'],
+  			'geist-mono': ['var(--font-geist-mono)'],
+				'roboto': ['var(--font-roboto)'],
+				'montserrat': ['var(--font-montserrat)'],
+				'nunito': ['var(--font-nunito)'],
+				'comfortaa': ['var(--font-comfortaa)'],
+  		},
   	}
   },
   plugins: [
