@@ -83,9 +83,8 @@ export default function ProjectLayout() {
         <div className="max-w-sm md:max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 md:gap-x-20 gap-y-10 w-full">
             {projects.map((project) => (
-              <div className="flex justify-center">
+              <div className="flex justify-center" key={project.title}>
                 <ProjectCard
-                  key={project.title}
                   {...project}
                   onClick={() => setSelectedProject(project)}
                 />
