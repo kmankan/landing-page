@@ -19,13 +19,13 @@ export default function BioCard() {
           <br></br>
           <p>So I decided to become a fullstack software engineer.</p>
           <br></br>
-          <p>In Autumn 2024 I completed the <a href="https://fractalbootcamp.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">Fractal Tech</a> Software Engineering Accelerator program in New York. This was something like a religious experience where I fell deeply in love with the process of building software. I leveled up a lot, obliterated my self-doubt and learned more than I thought was possible.</p>
+          <p>In Autumn 2024 I moved to New York for the <a href="https://fractalbootcamp.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">Fractal Tech</a> Software Engineering Accelerator. This was something like a religious experience where I fell deeply in love with the process of building software. I leveled up a lot, obliterated my self-doubt and learned more than I thought was possible.</p>
           <br></br>
           <p>Now i&apos;m looking to join a brilliant team of engineers and creatives on a mission to build something incredible. If you&apos;re seeing this and that&apos;s you please reach out.</p>
           <br></br>
           <p>If you&apos;re unconvinced, read this doc on <a href="https://mkan.xyz/why-you-should-hire-me" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">why you should hire me.</a></p>
           <br></br>
-          <p>I&apos;m currently based in Sydney Australia but open to moving basically anywhere for the right role.</p>
+          <p>I&apos;m typically based in Sydney Australia but open to moving basically anywhere for the right role.</p>
         </div>
 
       </div>
