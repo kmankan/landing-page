@@ -78,7 +78,7 @@ export default function ProjectLayout() {
 
   return (
     <>
-      <h1 className="text-4xl font-bold text-center mt-6">Projects</h1>
+      <h1 className="relative text-4xl font-bold text-center mt-6">Projects</h1>
       <div className="flex flex-col justify-center items-center mt-10">
         <div className="grid grid-cols-2 gap-x-20 gap-y-10 max-w-6xl mx-auto">
           {projects.map((project) => (

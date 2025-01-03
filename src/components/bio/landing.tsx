@@ -3,11 +3,13 @@
 import InfoCardLarge from "@/components/bio/info-card-large";
 import InfoCardSmall from "@/components/bio/info-card-small";
 import BioCard from "@/components/bio/bio-card";
+import { ChevronDown } from 'lucide-react';
+import { motion } from "motion/react";
 
 export default function Landing() {
   return (
-    <div className="w-full overflow-hidden rounded-lg">
-      <h1 className="text-4xl font-bold text-center mt-6">About Me</h1>
+    <div>
+      <h1 className="relative text-4xl font-bold text-center mt-6">About Me</h1>
       <div className="flex flex-row justify-center gap-60 mx-auto mt-16">
         <div className="flex items-center justify-center">
           <BioCard />
@@ -23,6 +25,19 @@ export default function Landing() {
           </div>
         </div>
       </div>
+      <motion.div
+        initial={{ opacity: 1, y: 0 }}
+        animate={{
+          y: [0, 20, 0]
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+        className="flex flex-row justify-center gap-60 mx-auto mt-12">
+        <ChevronDown color="white" />
+      </motion.div>
     </div>
   );
 }
