@@ -79,18 +79,22 @@ export default function ProjectLayout() {
   return (
     <>
       <h1 className="relative text-4xl font-bold text-center mt-6 font-comfortaa">Projects</h1>
-      <div className="flex flex-col justify-center items-center mt-10 font-nunito">
-        <div className="grid grid-cols-2 gap-x-20 gap-y-10 max-w-6xl mx-auto">
-          {projects.map((project) => (
-            <ProjectCard
-              key={project.title}
-              {...project}
-              onClick={() => setSelectedProject(project)}
-            />
-          ))}
+      <div className="px-4 md:px-0 mt-10 font-nunito">
+        <div className="max-w-sm md:max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 md:gap-x-20 gap-y-10 w-full">
+            {projects.map((project) => (
+              <div className="flex justify-center">
+                <ProjectCard
+                  key={project.title}
+                  {...project}
+                  onClick={() => setSelectedProject(project)}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-      <div className="relative flex flex-wrap gap-2 justify-center items-center mt-20 font-geist-mono">
+      <div className="relative flex flex-wrap gap-2 justify-center items-center my-10 md:my-20 font-geist-mono">
         {skills.map((skill) => (
           <Badge key={skill}>{skill}</Badge>
         ))}

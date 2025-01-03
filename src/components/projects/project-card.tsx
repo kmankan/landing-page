@@ -14,10 +14,10 @@ export default function ProjectCard({ title, shortDescription, onClick }: Projec
   return (
     <div
       id="project-card"
-      className="relative w-[431px] h-[150px] rounded-xl bg-slate-100 p-6 shadow-lg border-2 border-gray-800
+      className="relative w-[80%] md:w-[431px] h-auto md:min-h-[150px] rounded-xl bg-slate-100 p-6 shadow-lg border-2 border-gray-800
         transition-all duration-200 
         hover:scale-105 hover:shadow-md 
-        active:scale-95 active:bg-gray-100 
+        active:scale-95 active:bg-gray-100
         cursor-pointer"
       onClick={onClick}
     >
