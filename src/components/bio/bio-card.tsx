@@ -11,7 +11,7 @@ export default function BioCard() {
       <div className="flex flex-col">
         <Image src="/profile/IMG_9314.png" alt="Malin" width={110} height={110} className="rounded-full relative mb-2 md:mb-0 md:absolute md:top-4 md:right-4 border-2 md:border-2 mx-auto md:mx-0" />
         <div id="blurb">
-          <h1 id="title">hey i&apos;m malin (or mahlen)</h1>
+          <h1 id="title">hey i&apos;m malin (a.k.a mahlen)</h1>
           <br></br>
           <p>In a previous life I worked on improving infra at large orgs.</p>
           <br></br>
