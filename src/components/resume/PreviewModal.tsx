@@ -15,7 +15,7 @@ export function PreviewModal({ isOpen, onClose, url, title, previewImage, descri
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 flex items-center justify-center font-nunito">
       <div className="fixed inset-0 bg-black/50" onClick={onClose} />
       <div className="relative w-11/12 max-w-2xl bg-[#1a1a1c] rounded-lg p-6">
         <button onClick={onClose} className="absolute right-4 top-4 p-2 text-white">
