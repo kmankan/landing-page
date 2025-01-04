@@ -24,7 +24,7 @@ export default function BioCard() {
           <br></br>
           <p>Now i&apos;m looking to join a brilliant team of engineers and creatives on a mission to build something incredible. If you&apos;re seeing this and that&apos;s you please reach out.</p>
           <br></br>
-          <p>If you made it this far and are still on the fence, read this doc on <a href="https://mkan.xyz/why-you-should-hire-me" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">why you should hire me.</a></p>
+          <p>If you made it this far and are still on the fence, read this doc on <a href="https://mkan.xyz/thoughts/why-you-should-hire-me" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">why you should hire me.</a></p>
           <br></br>
           <p>I&apos;m typically based in Sydney Australia but open to moving basically anywhere for the right role.</p>
         </div>
