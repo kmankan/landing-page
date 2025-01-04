@@ -3,6 +3,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import Landing from "@/components/bio/landing";
 import ProjectLayout from "@/components/projects/project-layout";
 import { Boxes } from "@/components/ui/background-boxes"
+import { useEffect, useState } from 'react';
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -11,6 +12,14 @@ export default function Home() {
     damping: 30,
     restDelta: 0.001
   });
+
+  const [isSafari, setIsSafari] = useState(false);
+
+  useEffect(() => {
+    if (typeof navigator !== 'undefined') {
+      setIsSafari(navigator.vendor === "Apple Computer, Inc.");
+    }
+  }, []);
 
   return (
     <>
@@ -29,25 +38,31 @@ export default function Home() {
       <div className="overflow-y-auto snap-y snap-mandatory min-h-screen">
         {/* Landing section */}
         <div className="snap-start min-h-screen">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.2 }}
-          >
-            <Landing />
-          </motion.div>
+          {!isSafari && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.2 }}
+            >
+              <Landing />
+            </motion.div>
+          )}
+          {isSafari && <Landing />}
         </div>
 
         {/* Projects section */}
         <div className="min-h-screen snap-start pt-6 z-10">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
-            <ProjectLayout />
-          </motion.div>
+          {!isSafari && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+            >
+              <ProjectLayout />
+            </motion.div>
+          )}
+          {isSafari && <ProjectLayout />}
         </div>
       </div>
     </>
