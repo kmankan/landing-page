@@ -3,7 +3,7 @@ import { motion, useScroll, useSpring, MotionGlobalConfig } from "framer-motion"
 import Landing from "@/components/bio/landing";
 import ProjectLayout from "@/components/projects/project-layout";
 import { Boxes } from "@/components/ui/background-boxes"
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 export default function Home() {
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
