@@ -2,7 +2,7 @@
 //import { motion, useScroll, useSpring } from "framer-motion";
 import Landing from "@/components/bio/landing";
 import ProjectLayout from "@/components/projects/project-layout";
-import { Boxes } from "@/components/ui/background-boxes"
+//import { Boxes } from "@/components/ui/background-boxes"
 //import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -31,9 +31,9 @@ export default function Home() {
       /> */}
 
       {/* Background boxes */}
-      <div className="fixed inset-0">
+      {/* <div className="fixed inset-0">
         <Boxes />
-      </div>
+      </div> */}
 
       {/* Content layer - removed relative */}
       <div className="overflow-y-auto snap-y snap-mandatory min-h-screen">
