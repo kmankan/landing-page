@@ -16,8 +16,9 @@ export default function Home() {
   const [isSafari, setIsSafari] = useState(false);
 
   useEffect(() => {
-    if (typeof navigator !== 'undefined') {
-      setIsSafari(navigator.vendor === "Apple Computer, Inc.");
+    if (typeof navigator === 'undefined' || navigator.vendor === "Apple Computer, Inc.") {
+      setIsSafari(true);
+      console.log("detected", navigator, navigator.vendor);
     }
   }, []);
 
