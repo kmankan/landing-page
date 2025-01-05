@@ -3,7 +3,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import Landing from "@/components/bio/landing";
 import ProjectLayout from "@/components/projects/project-layout";
 import { Boxes } from "@/components/ui/background-boxes"
-import { useEffect, useState } from 'react';
+//import { useEffect, useState } from 'react';
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -13,14 +13,14 @@ export default function Home() {
     restDelta: 0.001
   });
 
-  const [isSafari, setIsSafari] = useState(false);
+  // const [isSafari, setIsSafari] = useState(false);
 
-  useEffect(() => {
-    if (typeof navigator === 'undefined' || navigator.vendor === "Apple Computer, Inc.") {
-      setIsSafari(true);
-      console.log("detected", navigator, navigator.vendor);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (typeof navigator === 'undefined' || navigator.vendor === "Apple Computer, Inc.") {
+  //     setIsSafari(true);
+  //     console.log("detected", navigator, navigator.vendor);
+  //   }
+  // }, []);
 
   return (
     <>
@@ -39,7 +39,7 @@ export default function Home() {
       <div className="overflow-y-auto snap-y snap-mandatory min-h-screen">
         {/* Landing section */}
         <div className="snap-start min-h-screen">
-          {!isSafari && (
+          {/* {!isSafari && (
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -48,12 +48,13 @@ export default function Home() {
               <Landing />
             </motion.div>
           )}
-          {isSafari && <Landing />}
+          {isSafari && <Landing />} */}
+          <Landing />
         </div>
 
         {/* Projects section */}
         <div className="min-h-screen snap-start pt-6 z-10">
-          {!isSafari && (
+          {/* {!isSafari && (
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -63,7 +64,8 @@ export default function Home() {
               <ProjectLayout />
             </motion.div>
           )}
-          {isSafari && <ProjectLayout />}
+          {isSafari && <ProjectLayout />} */}
+          <ProjectLayout />
         </div>
       </div>
     </>
