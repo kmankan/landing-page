@@ -17,7 +17,7 @@ export default function Landing() {
         <div className="flex flex-col items-center md:items-end justify-center gap-6 font-nunito font-normal">
           <InfoCardLarge handle="@kmankan" iconName="github" />
           <InfoCardLarge handle="@mahlenr" iconName="twitter" />
-          <InfoCardLarge handle="mkan.xyz" iconName="blog" />
+          <InfoCardLarge handle="blog" iconName="blog" />
           <div className="flex gap-4">
             <InfoCardSmall iconName="email" />
             <InfoCardSmall iconName="calendar" />
