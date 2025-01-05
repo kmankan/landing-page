@@ -5,11 +5,11 @@ export default function BioCard() {
   return (
     <div
       id="bio-card"
-      className="relative w-[80%] lg:w-[631px] xl:w-[800px] h-auto min-h-[640px] rounded-xl bg-slate-100 p-4 lg:p-6 xl:p-8 shadow-lg border-2 border-gray-800
+      className="relative w-[80%] lg:w-[631px] 2xl:w-[800px] h-auto min-h-[640px] rounded-xl bg-slate-100 p-4 lg:p-6 2xl:p-8 shadow-lg border-2 border-gray-800
         cursor-text mx-auto"
     >
       <div className="flex flex-col">
-        <Image src="/profile/IMG_9314.png" alt="Malin" width={110} height={110} priority className="rounded-full relative mb-2 lg:mb-0 lg:absolute lg:top-4 lg:right-4 xl:top-8 xl:right-8 border-2 lg:border-2 mx-auto lg:mx-0" />
+        <Image src="/profile/IMG_9314.png" alt="Malin" width={110} height={110} priority className="rounded-full relative mb-2 lg:mb-0 lg:absolute lg:top-4 lg:right-4 2xl:top-8 2xl:right-8 border-2 lg:border-2 mx-auto lg:mx-0" />
         <div id="blurb">
           <h1 id="title">hey i&apos;m malin (a.k.a mahlen)</h1>
           <br></br>

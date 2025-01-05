@@ -10,7 +10,7 @@ export default function Landing() {
   return (
     <div>
       <h1 className="relative text-4xl font-bold text-center mt-6 font-comfortaa">About Me</h1>
-      <div className="flex flex-col lg:flex-row justify-center lg:gap-60 gap-8 mx-auto mt-8 lg:mt-14 2xl:mt-20">
+      <div className="flex flex-col lg:flex-row justify-center lg:gap-60 gap-8 mx-auto mt-8 lg:mt-14 2xl:mt-36">
         <div className="flex items-center justify-center font-nunito text-base">
           <BioCard />
         </div>
@@ -28,14 +28,14 @@ export default function Landing() {
       <motion.div
         initial={{ opacity: 1, y: 0 }}
         animate={{
-          y: [0, 20, 0]
+          y: [0, 18, 0]
         }}
         transition={{
           duration: 2,
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        className="flex justify-center mx-auto mt-20 2xl:mt-56 mb-10">
+        className="flex justify-center mx-auto mt-10 2xl:mt-56 mb-10">
         <div className="flex flex-col">
           <FlickeringArrow />
         </div>
