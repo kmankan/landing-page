@@ -6,14 +6,12 @@ import { Boxes } from "@/components/ui/background-boxes"
 import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const [isMobile, setIsMobile] = useState(false);
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   useEffect(() => {
     console.log("detected", navigator, navigator.vendor);
-    const checkIsMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    setIsMobile(checkIsMobile);
-    console.log("isMobile", checkIsMobile);
-    if (checkIsMobile) {
+    console.log("isMobile", isMobile);
+    if (isMobile) {
       MotionGlobalConfig.skipAnimations = true
     }
   }, []);
