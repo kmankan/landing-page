@@ -1,12 +1,12 @@
 'use client'
-import { motion, useScroll, useSpring } from "framer-motion";
+//import { motion, useScroll, useSpring } from "framer-motion";
 import Landing from "@/components/bio/landing";
 import ProjectLayout from "@/components/projects/project-layout";
 import { Boxes } from "@/components/ui/background-boxes"
 //import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const { scrollYProgress } = useScroll();
+  // const { scrollYProgress } = useScroll();
   // const scaleX = useSpring(scrollYProgress, {
   //   stiffness: 100,
   //   damping: 30,
