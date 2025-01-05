@@ -10,11 +10,11 @@ export default function Landing() {
   return (
     <div>
       <h1 className="relative text-4xl font-bold text-center mt-6 font-comfortaa">About Me</h1>
-      <div className="flex flex-col md:flex-row justify-center md:gap-60 gap-8 mx-auto mt-8 md:mt-14">
+      <div className="flex flex-col lg:flex-row justify-center lg:gap-60 gap-8 mx-auto mt-8 lg:mt-14 2xl:mt-20">
         <div className="flex items-center justify-center font-nunito text-base">
           <BioCard />
         </div>
-        <div className="flex flex-col items-center md:items-end justify-center gap-6 font-nunito font-normal">
+        <div className="flex flex-col items-center lg:items-end justify-center gap-6 font-nunito font-normal">
           <InfoCardLarge handle="@kmankan" iconName="github" />
           <InfoCardLarge handle="@mahlenr" iconName="twitter" />
           <InfoCardLarge handle="blog" iconName="blog" />
@@ -35,8 +35,10 @@ export default function Landing() {
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        className="flex flex-row justify-center gap-60 mx-auto mt-12">
-        <FlickeringArrow />
+        className="flex justify-center mx-auto mt-20 2xl:mt-56 mb-10">
+        <div className="flex flex-col">
+          <FlickeringArrow />
+        </div>
       </motion.div>
     </div>
   );
