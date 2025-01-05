@@ -2,6 +2,7 @@
 import { motion, useScroll, useSpring, MotionGlobalConfig } from "framer-motion";
 import Landing from "@/components/bio/landing";
 import ProjectLayout from "@/components/projects/project-layout";
+import LinkToCV from "@/components/resume/LinkToCV";
 import { Boxes } from "@/components/ui/background-boxes"
 import { useEffect } from 'react';
 
@@ -86,6 +87,9 @@ export default function RenderMain() {
           ) : (
             <ProjectLayout />
           )}
+          <div className="relative flex justify-center items-center z-10 my-32">
+            <LinkToCV />
+          </div>
         </div>
       </div>
     </>
