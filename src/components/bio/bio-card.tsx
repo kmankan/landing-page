@@ -9,7 +9,7 @@ export default function BioCard() {
         cursor-text"
     >
       <div className="flex flex-col">
-        <Image src="/profile/IMG_9314.png" alt="Malin" width={110} height={110} className="rounded-full relative mb-2 md:mb-0 md:absolute md:top-4 md:right-4 border-2 md:border-2 mx-auto md:mx-0" />
+        <Image src="/profile/IMG_9314.png" alt="Malin" width={110} height={110} priority className="rounded-full relative mb-2 md:mb-0 md:absolute md:top-4 md:right-4 border-2 md:border-2 mx-auto md:mx-0" />
         <div id="blurb">
           <h1 id="title">hey i&apos;m malin (a.k.a mahlen)</h1>
           <br></br>

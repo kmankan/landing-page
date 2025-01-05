@@ -4,7 +4,7 @@ import InfoCardLarge from "@/components/bio/info-card-large";
 import InfoCardSmall from "@/components/bio/info-card-small";
 import BioCard from "@/components/bio/bio-card";
 import { motion } from "motion/react";
-import FlickeringArrow from "../FlickeringArrow";
+import FlickeringArrow from "@/components/ui/FlickeringArrow";
 
 export default function Landing() {
   return (
