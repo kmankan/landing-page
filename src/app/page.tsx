@@ -7,11 +7,11 @@ import { Boxes } from "@/components/ui/background-boxes"
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001
-  });
+  // const scaleX = useSpring(scrollYProgress, {
+  //   stiffness: 100,
+  //   damping: 30,
+  //   restDelta: 0.001
+  // });
 
   // const [isSafari, setIsSafari] = useState(false);
 
@@ -25,10 +25,10 @@ export default function Home() {
   return (
     <>
       {/* Progress bar */}
-      <motion.div
+      {/* <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-[#ff705c] origin-[0%] z-50"
         style={{ scaleX }}
-      />
+      /> */}
 
       {/* Background boxes */}
       <div className="fixed inset-0">

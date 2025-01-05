@@ -25,7 +25,7 @@ export default function Landing() {
           </div>
         </div>
       </div>
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 1, y: 0 }}
         animate={{
           y: [0, 20, 0]
@@ -37,7 +37,7 @@ export default function Landing() {
         }}
         className="flex flex-row justify-center gap-60 mx-auto mt-12">
         <FlickeringArrow />
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 }
