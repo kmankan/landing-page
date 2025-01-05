@@ -3,8 +3,8 @@
 import InfoCardLarge from "@/components/bio/info-card-large";
 import InfoCardSmall from "@/components/bio/info-card-small";
 import BioCard from "@/components/bio/bio-card";
-//import { motion } from "motion/react";
-//import FlickeringArrow from "../FlickeringArrow";
+import { motion } from "motion/react";
+import FlickeringArrow from "../FlickeringArrow";
 
 export default function Landing() {
   return (
@@ -25,7 +25,7 @@ export default function Landing() {
           </div>
         </div>
       </div>
-      {/* <motion.div
+      <motion.div
         initial={{ opacity: 1, y: 0 }}
         animate={{
           y: [0, 20, 0]
@@ -37,7 +37,7 @@ export default function Landing() {
         }}
         className="flex flex-row justify-center gap-60 mx-auto mt-12">
         <FlickeringArrow />
-      </motion.div> */}
+      </motion.div>
     </div>
   );
 }
