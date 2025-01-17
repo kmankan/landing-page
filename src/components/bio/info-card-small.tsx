@@ -17,7 +17,7 @@ export default function InfoCardSmall(
       twitter: `https://twitter.com/mahlenr`,
       email: `mailto:malin.kankanamge@gmail.com`,
       blog: `https://mkan.xyz/`,
-      calendar: 'https://cal.com/malin-kankanamge-vpw5pl'
+      calendar: 'https://cal.com/kmankan'
     };
     window.open(urls[iconName], '_blank');
   }
