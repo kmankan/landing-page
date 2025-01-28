@@ -49,24 +49,24 @@ export function PreviewModal({ isOpen, onClose, url, title, previewImage, descri
         <p className="text-white mb-6">{description}</p>
 
         <div className="flex justify-between gap-4">
-          {githubUrl && (
-            <a
-              href={githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-gray-600 text-white font-bold rounded-lg hover:bg-gray-600 transition-all flex items-center gap-2"
-            >
-              <FontAwesomeIcon icon={faGithub} className="w-5 h-5" />
-              Github
-            </a>
-          )}
+          <button
+            onClick={onClose}
+            className="px-4 py-2 bg-gray-700 text-white font-bold rounded-lg hover:bg-gray-600 transition-all"
+          >
+            Close
+          </button>
           <div className="flex gap-4">
-            <button
-              onClick={onClose}
-              className="px-4 py-2 bg-gray-700 text-white font-bold rounded-lg"
-            >
-              Close
-            </button>
+            {githubUrl && (
+              <a
+                href={githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-[#8250DF] text-white font-bold rounded-lg hover:bg-violet-500 transition-all flex items-center gap-2"
+              >
+                <FontAwesomeIcon icon={faGithub} className="w-5 h-5" />
+                Github
+              </a>
+            )}
             <a
               href={url}
               target="_blank"
