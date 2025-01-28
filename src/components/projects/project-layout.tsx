@@ -11,24 +11,27 @@ type Projects = {
   description: string
   shortDescription: string
   videoEmbed?: string
+  githubUrl?: string
 }
 
 // Define project data
 const projects = [
-  {
-    title: 'Snack Safari',
-    url: 'https://snack-safari.vercel.app/',
-    previewImage: '/projects/snack-safari-preview.png',
-    description: 'A fully functional e-commerce website selling the best snacks from around the world. Next.js frontend with ExpressJS backend. Neon hosted Postgres DB with Prisma ORM. Auth using Firebase. Includes full Stripe integration.',
-    shortDescription: 'A fully functional e-commerce website selling the best snacks from around the world.'
-  },
   {
     title: 'Felt Sense',
     url: 'https://felt-sense.vercel.app/',
     previewImage: '/projects/felt-sense-preview.png',
     description: 'An AI voice companion for exploring your emotions and working through difficulties. Built fully on Next.js with serverless functions, Postgres DB on Neon using Prisma ORM. Auth with AuthKit by WorkOS. Utilizes Deepgram for speech-to-text, Claude-Sonnet-3.5 for text generation, and Cartesia for text-to-speech.',
     shortDescription: 'An AI voice companion for exploring your emotions and working through difficulties.',
-    videoEmbed: 'https://www.loom.com/embed/d73dcd71a85645b98cfaa75190e3c550?sid=16f09d37-d259-4a97-8f21-6188a1070916'
+    videoEmbed: 'https://www.loom.com/embed/d73dcd71a85645b98cfaa75190e3c550?sid=16f09d37-d259-4a97-8f21-6188a1070916',
+    githubUrl: 'https://github.com/kmankan/felt-sense'
+  },
+  {
+    title: 'Snack Safari',
+    url: 'https://snack-safari.vercel.app/',
+    previewImage: '/projects/snack-safari-preview.png',
+    description: 'A fully functional e-commerce website selling the best snacks from around the world. Next.js frontend with ExpressJS backend. Neon hosted Postgres DB with Prisma ORM. Auth using Firebase. Includes full Stripe integration.',
+    shortDescription: 'A fully functional e-commerce website selling the best snacks from around the world.',
+    githubUrl: 'https://github.com/kmankan/snack-safari'
   },
   {
     title: 'Art & Friends',
@@ -36,7 +39,8 @@ const projects = [
     previewImage: '/projects/artandfriends-preview.png',
     description: 'A social media app for creating and sharing 3D art, as well as uploading your favourite images with your timeline. Built fully on Next.js, pgSQL on Vercel, AWS S3 for storage, and Clerk for authentication.',
     shortDescription: 'A social media app for generating and sharing art with your timeline.',
-    videoEmbed: 'https://www.loom.com/embed/ad9e26f12bb84cd2a249feaf439d0b69?sid=4009a7ec-9a59-4f6c-88be-b342facdb5b7'
+    videoEmbed: 'https://www.loom.com/embed/ad9e26f12bb84cd2a249feaf439d0b69?sid=4009a7ec-9a59-4f6c-88be-b342facdb5b7',
+    githubUrl: 'https://github.com/kmankan/malin.social-art'
   },
   {
     title: 'PaperPilot',
@@ -44,21 +48,24 @@ const projects = [
     previewImage: '/projects/paperpilot-preview.png',
     description: 'Interactive PDF reader that auto-generates context to help understand scientific articles. Built with React and PDF.js.',
     shortDescription: 'Interactive PDF reader that auto-generates context to help understand scientific articles.',
-    videoEmbed: 'https://www.loom.com/embed/7f3d59e360d24cf3af156d8d72a2ec84?sid=72f0bdc0-1047-41e2-ad5a-ef4c95804e68'
+    videoEmbed: 'https://www.loom.com/embed/7f3d59e360d24cf3af156d8d72a2ec84?sid=72f0bdc0-1047-41e2-ad5a-ef4c95804e68',
+    githubUrl: 'https://github.com/kmankan/paperpilot'
   },
   {
     title: 'Converse Chronicle',
     url: 'https://github.com/kmankan/converse-chronicle',
     previewImage: '/projects/converse-chronicle-preview.png',
     description: 'A React Native mobile application that enables users to record, transcribe, and analyze conversations with AI-powered insights. Features real-time audio visualization, accurate transcription with diarization, and conversation summarization.',
-    shortDescription: 'React Native mobile app for recording and analyzing conversations.'
+    shortDescription: 'React Native mobile app for recording and analyzing conversations.',
+    githubUrl: 'https://github.com/kmankan/converse-chronicle'
   },
   {
     title: 'Algorithm Visualizer',
     url: 'https://malin-algorithms.vercel.app/',
     previewImage: '/projects/algorithm-visualizer-preview.png',
     description: 'A visualizer for sorting and searching algorithms. Built purely with React and TailwindCSS.',
-    shortDescription: 'A visualizer for search and sort algorithms.'
+    shortDescription: 'A visualizer for search and sort algorithms.',
+    githubUrl: 'https://github.com/kmankan/malin-algorithms'
   }
 ]
 

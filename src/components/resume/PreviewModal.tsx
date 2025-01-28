@@ -1,5 +1,7 @@
 import { X } from 'lucide-react'
 import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 interface PreviewModalProps {
   isOpen: boolean
@@ -9,9 +11,10 @@ interface PreviewModalProps {
   previewImage: string
   description: string
   videoEmbed?: string
+  githubUrl?: string
 }
 
-export function PreviewModal({ isOpen, onClose, url, title, previewImage, description, videoEmbed }: PreviewModalProps) {
+export function PreviewModal({ isOpen, onClose, url, title, previewImage, description, videoEmbed, githubUrl }: PreviewModalProps) {
   if (!isOpen) return null
 
   return (
@@ -45,21 +48,34 @@ export function PreviewModal({ isOpen, onClose, url, title, previewImage, descri
 
         <p className="text-white mb-6">{description}</p>
 
-        <div className="flex justify-end gap-4">
-          <button
-            onClick={onClose}
-            className="px-4 py-2 bg-gray-700 text-white font-bold rounded-lg"
-          >
-            Close
-          </button>
-          <a
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 bg-[#FFEE52] text-[#1a1a1c] font-bold rounded-lg hover:bg-gray-700 hover:text-yellow-300 transition-all"
-          >
-            Visit Site
-          </a>
+        <div className="flex justify-between gap-4">
+          {githubUrl && (
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-gray-600 text-white font-bold rounded-lg hover:bg-gray-600 transition-all flex items-center gap-2"
+            >
+              <FontAwesomeIcon icon={faGithub} className="w-5 h-5" />
+              Github
+            </a>
+          )}
+          <div className="flex gap-4">
+            <button
+              onClick={onClose}
+              className="px-4 py-2 bg-gray-700 text-white font-bold rounded-lg"
+            >
+              Close
+            </button>
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-[#FFEE52] text-[#1a1a1c] font-bold rounded-lg hover:bg-gray-700 hover:text-yellow-300 transition-all"
+            >
+              Visit Site
+            </a>
+          </div>
         </div>
       </div>
     </div>

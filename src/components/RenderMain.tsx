@@ -4,15 +4,15 @@ import Landing from "@/components/bio/landing";
 import ProjectLayout from "@/components/projects/project-layout";
 import LinkToCV from "@/components/resume/LinkToCV";
 import { Boxes } from "@/components/ui/background-boxes"
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function RenderMain() {
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    setIsMobile(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent));
     console.log("detected", navigator, navigator.vendor);
-    console.log("isMobile", isMobile);
-    if (isMobile) {
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
       MotionGlobalConfig.skipAnimations = true
     }
   }, []);

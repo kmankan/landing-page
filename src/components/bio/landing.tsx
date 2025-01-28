@@ -10,7 +10,7 @@ export default function Landing() {
   return (
     <div>
       <h1 className="relative text-4xl font-bold text-center mt-6 font-comfortaa">About Me</h1>
-      <div className="flex flex-col lg:flex-row justify-center lg:gap-60 gap-8 mx-auto mt-8 lg:mt-14 2xl:mt-36">
+      <div className="flex flex-col lg:flex-row justify-center lg:gap-60 gap-8 mx-auto mt-8 lg:mt-10 2xl:mt-36">
         <div className="flex items-center justify-center font-nunito text-base">
           <BioCard />
         </div>
