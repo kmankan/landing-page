@@ -7,13 +7,15 @@ import { Boxes } from "@/components/ui/background-boxes"
 import { useEffect, useState } from 'react';
 
 export default function RenderMain() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
 
   useEffect(() => {
-    setIsMobile(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent));
-    console.log("detected", navigator, navigator.vendor);
-    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-      MotionGlobalConfig.skipAnimations = true
+    // This only runs once on mount
+    const width = window.innerWidth;
+    const isMobileView = width < 768;
+    setIsMobile(isMobileView);
+    if (isMobileView) {
+      MotionGlobalConfig.skipAnimations = true;
     }
   }, []);
 
@@ -59,7 +61,15 @@ export default function RenderMain() {
 
       {/* Background boxes */}
       <div className="fixed inset-0">
-        {!isMobile && <Boxes />}
+        {!isMobile && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2.5, ease: "easeOut" }}
+          >
+            <Boxes />
+          </motion.div>
+        )}
       </div>
 
       {/* Content layer - removed relative */}
