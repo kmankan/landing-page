@@ -29,12 +29,12 @@ export default function RenderMain() {
   interface LandingProps {
     initial: { opacity: number };
     animate: { opacity: number };
-    transition: { duration: number };
+    //transition: { duration: number, ease: string };
   }
   const landingProps: LandingProps = {
-    initial: { opacity: 0 },
+    initial: { opacity: 1 },
     animate: { opacity: 1 },
-    transition: { duration: 0.2 }
+    //transition: { duration: 0.1, ease: "easeOut" }
   }
 
   interface ProjectsProps {
