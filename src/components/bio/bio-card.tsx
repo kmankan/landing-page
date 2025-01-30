@@ -71,7 +71,7 @@ export default function BioCard() {
           className="rounded-full relative mb-2 lg:mb-0 lg:float-right lg:ml-4 2xl:ml-6 border-2 mx-auto lg:mx-0"
         />
         <div id="blurb" className="space-y-[18px]">
-          <h1 id="title">Hey i&apos;m Malin.</h1>
+          <h1 id="title">Hey I&apos;m Malin.</h1>
           <p>In a previous life I worked on banking infrastructure at some of Australia&apos;s top financial institutions.</p>
           <p>In 2024, I leaned in to a desire for more creativity in my work and I made the leap to software engineering through NYC&apos;s <a href="https://fractalbootcamp.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">Fractal Tech</a> SWE Accelerator. This was like a religious experience where I fell deeply in love with the process of building software.</p>
           <p>
@@ -82,10 +82,10 @@ export default function BioCard() {
             I won an AI Agents hackathon and shipped real features for local NYC startups.
           </p>
           {/* <p>I leveled up, obliterated my self-doubt and learned more than I thought was possible.</p> */}
-          <p>Now i&apos;m looking to join a brilliant team of engineers and creatives on a mission to build something incredible. If that&apos;s you then please reach out.</p>
+          <p>Now I&apos;m looking to join a brilliant team of engineers and creatives on a mission to build something incredible. If that&apos;s you then please reach out.</p>
           <p>Read <a href="https://mkan.xyz/thoughts/why-you-should-hire-me" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">why you should hire me.</a></p>
           <p>I&apos;m based in Sydney but happy to relocate to Melbourne, SF, or NYC for the right opportunity.</p>
-          <p>btw if you are US-based and concerned about visas/sponsorships/etc please read this post I wrote about <a href="https://mkan.xyz/The-E3-Visa" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">E3 visas.</a> They are a beautiful gift of the 2005 US-Australia Free Trade Agreement and they make it a breeze for Australians to live and work in the US at basically no cost to the employer.</p>
+          <p>Note: For any US-based employers hesitant about dealing with visas/sponsorships, please read this post I wrote about <a href="https://mkan.xyz/The-E3-Visa" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">E3 visas.</a> They are a beautiful gift of the 2005 US-Australia Free Trade Agreement and they make it a breeze for Australians to work in the US at basically no cost to the employer.</p>
         </div>
       </div>
       {selectedProject && (
