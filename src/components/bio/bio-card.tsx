@@ -58,7 +58,7 @@ export default function BioCard() {
   return (
     <div
       id="bio-card"
-      className="relative w-[80%] lg:w-[631px] 2xl:w-[800px] h-auto min-h-[640px] rounded-xl bg-slate-100 p-4 lg:p-6 2xl:p-8 shadow-lg border-2 border-gray-800
+      className="relative w-[80%] lg:w-[631px] 2xl:w-[800px] h-auto min-h-[600px] rounded-xl bg-slate-100 p-4 lg:p-6 2xl:p-8 shadow-lg border-2 border-gray-800
         cursor-text mx-auto"
     >
       <div className="flex flex-col lg:block">
@@ -81,11 +81,12 @@ export default function BioCard() {
             <span onClick={() => handleOnProjectClick(2)} className="cursor-pointer text-blue-500 underline"> PDF analysis tools</span> and many many more.
             I won an AI Agents hackathon and shipped real features for local NYC startups.
           </p>
+          <p>I&apos;m currently working as a contract software engineer, building a wellness startup and experimenting with voice agents in my free time.</p>
           {/* <p>I leveled up, obliterated my self-doubt and learned more than I thought was possible.</p> */}
-          <p>Now I&apos;m looking to join a brilliant team of engineers and creatives on a mission to build something incredible. If that&apos;s you then please reach out.</p>
-          <p>Read <a href="https://mkan.xyz/thoughts/why-you-should-hire-me" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">why you should hire me.</a></p>
-          <p>I&apos;m based in Sydney but happy to relocate to Melbourne, SF, or NYC for the right opportunity.</p>
-          <p>Note: For any US-based employers hesitant about dealing with visas/sponsorships, please read this post I wrote about <a href="https://mkan.xyz/The-E3-Visa" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">E3 visas.</a> They are a beautiful gift of the 2005 US-Australia Free Trade Agreement and they make it a breeze for Australians to work in the US at basically no cost to the employer.</p>
+          <p>I&apos;m always on the lookout to join a brilliant team of engineers and creatives on a mission to build something incredible. So if that&apos;s you and you feel like there&apos;s some synergies, reach out.</p>
+          <p>Also, <a href="https://mkan.xyz/thoughts/why-you-should-hire-me" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">read this page.</a></p>
+          {/* <p>I&apos;m typically based in Sydney but happy to relocate to Melbourne, SF, or NYC for the right opportunity.</p> */}
+          <p>If you are a US-based employer you should read this post I wrote about <a href="https://mkan.xyz/The-E3-Visa" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">E3 visas.</a> They are a beautiful gift of the 2005 US-Australia Free Trade Agreement and they make it a breeze for Australians to work in the US at basically no cost to the employer.</p>
         </div>
       </div>
       {selectedProject && (
