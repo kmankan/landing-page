@@ -47,7 +47,7 @@ const projects = [
     title: 'Snack Safari',
     url: 'https://snack-safari.vercel.app/',
     previewImage: '/projects/snack-safari-preview.png',
-    description: 'A fully functional e-commerce website selling the best snacks from around the world. Next.js frontend with ExpressJS backend. Neon hosted Postgres DB with Prisma ORM. Auth using Firebase. Includes full Stripe integration.',
+    description: 'A simple e-commerce platform for selling snacks from different countries from around the world. \nBuilt with Next.js frontend with ExpressJS backend. \nNeon hosted Postgres DB with Prisma ORM. \nAuth using Firebase. \nIncludes full Stripe integration.',
     shortDescription: 'A fully functional e-commerce website selling the best snacks from around the world.',
     githubUrl: 'https://github.com/kmankan/snack-safari'
   },
