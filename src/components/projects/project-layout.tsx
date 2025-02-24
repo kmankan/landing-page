@@ -17,6 +17,24 @@ type Projects = {
 // Define project data
 const projects = [
   {
+    "title": "council.ai",
+    "url": "https://the-council-xi.vercel.app/",
+    "previewImage": "/projects/council-ai-preview.png",
+    "description": "Built for ElevenLabs x a16z global hackathon. \nThrough a series of reflective questions we identify and generate a council of personalised advisors perfectly suited to your unique circumstances that you can openly converse with. \nBuilt with Next.js, Supabase PostgreSQL and Auth, Claude Sonnet 3.5 for character generation, ElevenLabs Voice Design for unique advisor voices, Fal AI flux-lora for realistic character images, and OpenAI Whisper for voice transcription.",
+    "shortDescription": "Converse with a panel of advisors - ranging from historical figures to fictional characters; each bringing a unique perspective and wisdom to help you navigate life's challenges.",
+    "videoEmbed": "https://www.youtube.com/embed/VV4KOicuIdI?si=-pmSXH8X-Cz9ewFP",
+    "githubUrl": "https://github.com/kmankan/the-council"
+  },
+  {
+    title: 'Up Assistant',
+    url: 'https://whatsup.mahlen.dev/',
+    previewImage: '/projects/up-assistant-preview.png',
+    description: 'An AI-powered Up Bank companion with three interfaces: \na chat assistant using Gemini-Flash-2.0 with Deep Research for accurate product information, an Australian voice agent via BlandAI for natural phone conversations and an Account Explorer that leverages the Up API to help you explore your transaction history via natural language conversations. \nBuilt with Next.js and Express, featuring end-to-end encryption with asymmetric key exchange and JWT authentication to securely handle sensitive API credentials while maintaining user privacy.',
+    shortDescription: 'A multi-modal AI companion to Up Bank that provides product information and conversational interactions with transaction data using Up API.',
+    videoEmbed: 'https://www.loom.com/embed/c182cc8c73954b6f9d68a3281e961adb?sid=f0f62b62-dd51-4a5a-8ca8-29f7a3e89c41',
+    githubUrl: 'https://github.com/kmankan/voice-agent-up'
+  },
+  {
     title: 'Felt Sense',
     url: 'https://felt-sense.vercel.app/',
     previewImage: '/projects/felt-sense-preview.png',

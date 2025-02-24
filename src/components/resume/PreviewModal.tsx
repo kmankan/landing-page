@@ -46,7 +46,7 @@ export function PreviewModal({ isOpen, onClose, url, title, previewImage, descri
           )}
         </div>
 
-        <p className="text-white mb-6">{description}</p>
+        <p className="text-white mb-6 whitespace-pre-wrap">{description}</p>
 
         <div className="flex justify-between gap-4">
           <button
