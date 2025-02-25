@@ -76,14 +76,6 @@ const projects = [
     description: 'A React Native mobile application that enables users to record, transcribe, and analyze conversations with AI-powered insights. Features real-time audio visualization, accurate transcription with diarization, and conversation summarization.',
     shortDescription: 'React Native mobile app for recording and analyzing conversations.',
     githubUrl: 'https://github.com/kmankan/converse-chronicle'
-  },
-  {
-    title: 'Algorithm Visualizer',
-    url: 'https://malin-algorithms.vercel.app/',
-    previewImage: '/projects/algorithm-visualizer-preview.png',
-    description: 'A visualizer for sorting and searching algorithms. Built purely with React and TailwindCSS.',
-    shortDescription: 'A visualizer for search and sort algorithms.',
-    githubUrl: 'https://github.com/kmankan/malin-algorithms'
   }
 ]
 
