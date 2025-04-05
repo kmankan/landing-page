@@ -17,6 +17,24 @@ type Projects = {
 // Define project data
 const projects = [
   {
+    "title": "Eyeball",
+    "url": "https://eyeball.wtf/",
+    "previewImage": "/projects/eyeball-preview.png",
+    "description": "Eyeball is a React Native mobile app built on the Expo framework that transforms how you save and interact with bookmarks. The app features automatic metadata scraping to display rich bookmark cards, custom organization via channels, and an innovative chatbot that enables AI conversations about your saved links. \n\nBuilt with React Native frontend and Express.js backend hosted on Railway. Uses Supabase for PostgreSQL database and authentication. Integrates with OpenRouter for AI functionality and the iOS share sheet for seamless link saving across iOS.",
+    "shortDescription": "Eyeball is a powerful bookmarks app. Save all your links in one place across all devices, make them smarter using AI.",
+    //"videoEmbed": "https://www.youtube.com/embed/VV4KOicuIdI?si=-pmSXH8X-Cz9ewFP",
+    //"githubUrl": "https://github.com/kmankan/eyeball"
+  },
+  {
+    "title": "Dawn Labs Demo",
+    "url": "https://dawn-landing-page.vercel.app/",
+    "previewImage": "/projects/dawn-ai-preview.jpeg",
+    "description": "A landing page demo for Dawn Labs that uses complex frontend animations to showcase the capabilities of the dawn ai platform.\n\n(Be sure to scroll down to see the animations in action!)\n\nBuilt in Next.js and utilising Tailwind CSS and Framer Motion for animations.",
+    "shortDescription": "A landing page demo for Dawn Labs that uses complex frontend animations to showcase the capabilities of the platform.",
+    //"videoEmbed": "https://www.loom.com/embed/d73dcd71a85645b98cfaa75190e3c550?sid=16f09d37-d259-4a97-8f21-6188a1070916",
+    "githubUrl": "https://github.com/kmankan/dawn-landing-page"
+  },
+  {
     "title": "council.ai",
     "url": "https://the-council-xi.vercel.app/",
     "previewImage": "/projects/council-ai-preview.png",
@@ -42,23 +60,6 @@ const projects = [
     shortDescription: 'An AI voice companion for exploring your emotions and working through difficulties.',
     videoEmbed: 'https://www.loom.com/embed/d73dcd71a85645b98cfaa75190e3c550?sid=16f09d37-d259-4a97-8f21-6188a1070916',
     githubUrl: 'https://github.com/kmankan/felt-sense'
-  },
-  {
-    title: 'Snack Safari',
-    url: 'https://snack-safari.vercel.app/',
-    previewImage: '/projects/snack-safari-preview.png',
-    description: 'A simple e-commerce platform for selling snacks from different countries from around the world. \nBuilt with Next.js frontend with ExpressJS backend. \nNeon hosted Postgres DB with Prisma ORM. \nAuth using Firebase. \nIncludes full Stripe integration.',
-    shortDescription: 'A fully functional e-commerce website selling the best snacks from around the world.',
-    githubUrl: 'https://github.com/kmankan/snack-safari'
-  },
-  {
-    title: 'Art & Friends',
-    url: 'https://art-and-friends.mkan.xyz/',
-    previewImage: '/projects/artandfriends-preview.png',
-    description: 'A social media app for creating and sharing 3D art, as well as uploading your favourite images with your timeline. Built fully on Next.js, pgSQL on Vercel, AWS S3 for storage, and Clerk for authentication.',
-    shortDescription: 'A social media app for generating and sharing art with your timeline.',
-    videoEmbed: 'https://www.loom.com/embed/ad9e26f12bb84cd2a249feaf439d0b69?sid=4009a7ec-9a59-4f6c-88be-b342facdb5b7',
-    githubUrl: 'https://github.com/kmankan/malin.social-art'
   },
   {
     title: 'PaperPilot',
