@@ -56,7 +56,7 @@ export default function RootLayout({
         ${montserrat.variable} 
         ${nunito.variable} 
         ${comfortaa.variable} 
-        antialiased bg-[#f3f5f7]`}
+        antialiased bg-[#eff1f3]`}
       >
         <PostHogProvider>
           {children}
