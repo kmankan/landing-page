@@ -21,8 +21,8 @@ export default function ProjectCard({ title, shortDescription, onClick }: Projec
         cursor-pointer"
       onClick={onClick}
     >
-      <h1 className="text-2xl font-bold">{title}</h1>
-      <p className="text-sm">{shortDescription}</p>
+      <h1 className="text-2xl font-bold pb-2">{title}</h1>
+      <p className="text-sm ">{shortDescription}</p>
     </div>
   );
 }
