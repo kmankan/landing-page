@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     title: "council.ai",
-    url: "https://the-council-xi.vercel.app/",
+    //url: "https://the-council-xi.vercel.app/",
     previewImage: "/projects/council-ai-preview.png",
     description: "Built for ElevenLabs x a16z global hackathon. \nThrough a series of reflective questions we identify and generate a council of personalised advisors perfectly suited to your unique circumstances that you can openly converse with. \nBuilt with Next.js, Supabase PostgreSQL and Auth, Claude Sonnet 3.5 for character generation, ElevenLabs Voice Design for unique advisor voices, Fal AI flux-lora for realistic character images, and OpenAI Whisper for voice transcription.",
     shortDescription: "Converse with a council of advisors - ranging from historical figures to fictional characters; each bringing a unique perspective and wisdom to help you navigate life's challenges.",

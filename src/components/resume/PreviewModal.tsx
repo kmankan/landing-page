@@ -67,14 +67,16 @@ export function PreviewModal({ isOpen, onClose, url, title, previewImage, descri
                 Github
               </a>
             )}
-            <a
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-[#FFEE52] text-[#1a1a1c] font-bold rounded-lg hover:bg-gray-700 hover:text-yellow-300 transition-all"
-            >
-              Visit Site
-            </a>
+            {url && (
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-[#FFEE52] text-[#1a1a1c] font-bold rounded-lg hover:bg-gray-700 hover:text-yellow-300 transition-all"
+              >
+                Visit Site
+              </a>
+            )}
           </div>
         </div>
       </div>
